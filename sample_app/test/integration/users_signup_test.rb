@@ -31,9 +31,9 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
     assert is_logged_in?
   end
 
-  test 'should exist form[action="/signup"]' do
+  test 'should exist form[action="/users"]' do
     get signup_path
-    assert_select 'form[action="/signup"]'
+    assert_select 'form[action="/users"]'
   end
 
 end
